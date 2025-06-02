@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 # FASTAPI_URL = "https://fastapi-transcriber.up.railway.app"
-FASTAPI_URL = "http://localhost:8000"
+FASTAPI_URL = "http://localhost:8001/api/data"
 
 
 
