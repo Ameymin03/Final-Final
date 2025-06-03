@@ -4,7 +4,7 @@
 uvicorn backend:app --reload --port 8001 &
 
 # Optional: wait a second
-sleep 1
+sleep 2
 
 # Start frontend
-python frontend.py
+gunicorn frontend:app --bind 0.0.0.0:5000
