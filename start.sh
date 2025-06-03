@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Start backend
-uvicorn backend:app --reload --port 8001 &
+uvicorn backend:app --reload --port 8000 &
 
 # Optional: wait a second
 sleep 2
