@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Start the FastAPI backend in the background
-uvicorn backend:app --host 0.0.0.0 --port 8001 &
+# Start backend
+uvicorn backend:app --reload --port 8001 &
 
-# Optional delay to ensure backend is ready
-sleep 2
+# Optional: wait a second
+sleep 1
 
-# Start the Flask frontend using Gunicorn
-gunicorn frontend:app --bind 0.0.0.0:10000
+# Start frontend
+python frontend.py
