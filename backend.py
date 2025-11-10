@@ -44,7 +44,7 @@ def extract_video_id(url: str):
 async def root():
     return {"message": "YouTube Transcript API is running."}
 
-#Main route to process yt video
+
 @app.get("/process")
 async def process_video(video_url: str):
     video_id = extract_video_id(video_url)
